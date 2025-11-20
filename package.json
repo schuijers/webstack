@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "@schuijers/webstack",
+  "version": "0.0.0",
+  "description": "A modular web tooling and component ecosystem for modern front-end projects",
+  "license": "MIT",
+  "author": "Martijn Schuijers",
+  "homepage": "https://codeberg.org/schuijers/schuijers-webstack",
+  "repository": {
+    "type": "git",
+    "url": "https://codeberg.org/schuijers/schuijers-webstack.git"
+  },
+  "bugs": {
+    "url": "https://codeberg.org/schuijers/schuijers-webstack/issues"
+  },
+  "scripts": {
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "20.1.0",
+    "@commitlint/config-conventional": "20.0.0",
+    "@commitlint/types": "20.0.0",
+    "@schuijers/eslint-config": "2.0.0",
+    "eslint": "9.39.1",
+    "jiti": "2.6.1",
+    "lint-staged": "16.2.7",
+    "simple-git-hooks": "2.13.1",
+    "typescript": "5.9.3"
+  },
+  "keywords": [
+    "nuxt",
+    "vue"
+  ],
+  "engines": {
+    "node": ">=21.0.0"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "simple-git-hooks": {
+    "commit-msg": "npx --no-install commitlint --edit ${1}",
+    "pre-commit": "npx --no-install lint-staged"
+  }
+}

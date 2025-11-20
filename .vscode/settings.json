@@ -1,0 +1,28 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.formatOnSave": false,
+  "eslint.runtime": "node",
+  "eslint.validate": [
+    "css",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "json5",
+    "jsonc",
+    "markdown",
+    "scss",
+    "svg",
+    "toml",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "xml",
+    "yaml"
+  ],
+  "prettier.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

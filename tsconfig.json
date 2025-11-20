@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "paths": {
+      "@schuijers/*": ["packages/*/src"]
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ESNext"
+  }
+}
