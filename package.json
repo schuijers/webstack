@@ -14,7 +14,10 @@
     "url": "https://codeberg.org/schuijers/schuijers-webstack/issues"
   },
   "scripts": {
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:semver-ranges": "syncpack lint-semver-ranges",
+    "list-mismatches": "syncpack list-mismatches",
+    "prepare": "simple-git-hooks"
   },
   "devDependencies": {
     "@commitlint/cli": "20.1.0",
@@ -25,6 +28,7 @@
     "jiti": "2.6.1",
     "lint-staged": "16.2.7",
     "simple-git-hooks": "2.13.1",
+    "syncpack": "13.0.4",
     "typescript": "5.9.3"
   },
   "keywords": [
