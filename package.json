@@ -20,17 +20,24 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.2",
+    "@changesets/cli": "2.29.7",
     "@commitlint/cli": "20.1.0",
     "@commitlint/config-conventional": "20.0.0",
     "@commitlint/types": "20.0.0",
     "@schuijers/eslint-config": "2.0.0",
     "eslint": "9.39.1",
+    "fix-tsup-cjs": "1.2.0",
     "jiti": "2.6.1",
     "lint-staged": "16.2.7",
+    "rimraf": "6.1.2",
     "simple-git-hooks": "2.13.1",
     "syncpack": "13.0.4",
+    "tsup": "8.5.1",
     "turbo": "2.6.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vitest": "4.0.12",
+    "vue": "3.5.24"
   },
   "keywords": [
     "nuxt",
