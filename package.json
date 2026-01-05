@@ -21,12 +21,12 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",
-    "@changesets/cli": "2.29.7",
-    "@commitlint/cli": "20.1.0",
-    "@commitlint/config-conventional": "20.0.0",
-    "@commitlint/types": "20.0.0",
-    "@schuijers/eslint-config": "2.0.0",
-    "eslint": "9.39.1",
+    "@changesets/cli": "2.29.8",
+    "@commitlint/cli": "20.3.0",
+    "@commitlint/config-conventional": "20.3.0",
+    "@commitlint/types": "20.2.0",
+    "@schuijers/eslint-config": "3.0.0",
+    "eslint": "9.39.2",
     "fix-tsup-cjs": "1.2.0",
     "jiti": "2.6.1",
     "lint-staged": "16.2.7",
@@ -34,13 +34,15 @@
     "simple-git-hooks": "2.13.1",
     "syncpack": "13.0.4",
     "tsup": "8.5.1",
-    "turbo": "2.6.1",
+    "turbo": "2.7.3",
     "typescript": "5.9.3",
-    "vitest": "4.0.12",
-    "vue": "3.5.24"
+    "vitest": "4.0.16"
   },
   "keywords": [
+    "design-system",
+    "design-tokens",
     "nuxt",
+    "tailwindcss",
     "vue"
   ],
   "engines": {
@@ -49,7 +51,7 @@
   "lint-staged": {
     "*": "eslint --fix"
   },
-  "packageManager": "pnpm@10.23.0",
+  "packageManager": "pnpm@10.27.0",
   "simple-git-hooks": {
     "commit-msg": "npx --no-install commitlint --edit ${1}",
     "pre-commit": "npx --no-install lint-staged"
