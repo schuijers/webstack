@@ -1,17 +1,48 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": [".env", "tsconfig.json"],
+  "globalDependencies": [
+    ".env",
+    "tsconfig.json"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".nuxt/**", ".output/**", "dist/**"]
+      "outputs": [
+        ".nuxt/**",
+        ".output/**",
+        "dist/**"
+      ]
     },
     "dev": {
       "cache": false,
       "persistent": true
     },
     "lint": {
-      "cache": true
+      "dependsOn": ["^build"],
+      "inputs": [
+        "src/**",
+        "*.js",
+        "*.ts"
+      ]
+    },
+    "lint:fix": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "inputs": [
+        "src/**",
+        "*.js",
+        "*.ts"
+      ]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "inputs": [
+        "src/**/*.ts",
+        "src/**/*.vue",
+        "**/*.test.ts",
+        "**/*.spec.ts",
+        "vitest.config.ts"
+      ]
     }
   }
 }

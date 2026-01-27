@@ -1,15 +1,18 @@
 {
   "compilerOptions": {
-    "allowJs": false,
-    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "Node",
-    "paths": {
-      "@schuijers/*": ["packages/*/src"]
-    },
+    "moduleResolution": "bundler",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "ES2020"
   }
 }
