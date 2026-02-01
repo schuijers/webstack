@@ -2,7 +2,7 @@
   "private": true,
   "name": "@schuijers/webstack",
   "version": "0.0.0",
-  "description": "A modular web tooling and component ecosystem for modern front-end projects",
+  "description": "A modular web tooling and component ecosystem for modern front-end projects.",
   "license": "MIT",
   "author": "Martijn Schuijers",
   "homepage": "https://codeberg.org/schuijers/schuijers-webstack",
@@ -26,9 +26,9 @@
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",
     "@changesets/cli": "2.29.8",
-    "@commitlint/cli": "20.3.1",
-    "@commitlint/config-conventional": "20.3.1",
-    "@commitlint/types": "20.3.1",
+    "@commitlint/cli": "20.4.0",
+    "@commitlint/config-conventional": "20.4.0",
+    "@commitlint/types": "20.4.0",
     "@schuijers/eslint-config": "3.0.0",
     "baseline-browser-mapping": "2.9.19",
     "eslint": "9.39.2",
@@ -39,7 +39,7 @@
     "simple-git-hooks": "2.13.1",
     "syncpack": "13.0.4",
     "tsup": "8.5.1",
-    "turbo": "2.7.6",
+    "turbo": "2.8.1",
     "typescript": "5.9.3"
   },
   "keywords": [
@@ -50,7 +50,7 @@
     "vue"
   ],
   "engines": {
-    "node": ">=21.0.0"
+    "node": ">=20.0.0"
   },
   "packageManager": "pnpm@10.28.2",
   "pnpm": {
