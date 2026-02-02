@@ -6,9 +6,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default schuijers({
   typescript: {
-    overrides: {
-      '@typescript-eslint/no-explicit-any': 'off',
-    },
     parserOptions: {
       project: './tsconfig.json',
       tsconfigRootDir: __dirname,
@@ -19,21 +16,9 @@ export default schuijers({
       'unicorn/filename-case': [
         'error', {
           case: 'kebabCase',
-          ignore: [
-            /\.spec\.ts$/,
-            /\.stories\.ts$/,
-            /\.test\.ts$/,
-            /\.types\.ts$/,
-            /\.vue$/,
-          ],
+          ignore: [/\.stories\.ts$/],
         },
       ],
-      'unicorn/prevent-abbreviations': 'off',
-    },
-  },
-  vue: {
-    overrides: {
-      'vue/multi-word-component-names': 'off',
     },
   },
 })

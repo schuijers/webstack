@@ -1,8 +1,12 @@
 .DS_Store
 .turbo
-node_modules
+*.log
 dist
+node_modules
 
 # TypeScript build info
 *.tsbuildinfo
 tsconfig.tsbuildinfo
+
+# Storybook build output
+storybook-static

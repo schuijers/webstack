@@ -1,0 +1,212 @@
+import { Canvas, Meta, Story, Controls, Description, Primary, Stories } from '@storybook/addon-docs/blocks''
+import * as ButtonStories from './Button.stories'
+
+<Meta of={ButtonStories} />
+
+# Button
+
+<Description of={ButtonStories} />
+
+The Button component is a versatile, accessible button built on top of Reka UI primitives with Tailwind CSS styling. It provides multiple variants, sizes, and states to cover various use cases in your application.
+
+## Features
+
+- 🎨 **5 Visual Variants**: Primary, Secondary, Outline, Ghost, and Danger
+- 📏 **3 Sizes**: Small, Medium, and Large
+- ♿ **Fully Accessible**: Built with Reka UI primitives for WCAG compliance
+- 🔄 **Loading State**: Built-in loading spinner
+- 🚫 **Disabled State**: Proper disabled styling and behavior
+- 🎭 **Polymorphic**: Use `asChild` prop to render as any element
+- 🎯 **TypeScript**: Full type safety out of the box
+
+## Installation
+
+```bash
+pnpm add @schuijers/ui
+```
+
+## Basic Usage
+
+```vue
+<script setup lang="ts">
+import { Button } from '@schuijers/ui'
+import '@schuijers/ui/style.css'
+
+const handleClick = () => {
+  console.log('Button clicked!')
+}
+</script>
+
+<template>
+  <Button variant="primary" @click="handleClick">
+    Click me
+  </Button>
+</template>
+```
+
+## Interactive Demo
+
+<Primary />
+
+Use the controls below to interactively test the Button component:
+
+<Controls />
+
+## Stories
+
+Below are various examples showcasing different Button configurations and use cases.
+
+<Stories />
+
+## API Reference
+
+### Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `variant` | `'primary' \| 'secondary' \| 'outline' \| 'ghost' \| 'danger'` | `'primary'` | The visual style variant of the button |
+| `size` | `'sm' \| 'md' \| 'lg'` | `'md'` | The size of the button |
+| `disabled` | `boolean` | `false` | Whether the button is disabled |
+| `loading` | `boolean` | `false` | Whether the button is in a loading state (shows spinner) |
+| `asChild` | `boolean` | `false` | When true, renders the slot content directly instead of a button element |
+
+### Events
+
+| Event | Type | Description |
+|-------|------|-------------|
+| `click` | `(event: MouseEvent) => void` | Emitted when the button is clicked (not emitted when disabled or loading) |
+
+### Slots
+
+| Slot | Description |
+|------|-------------|
+| `default` | The content to display inside the button |
+
+## Variants
+
+The button comes in five visual variants:
+
+- **Primary**: Used for primary actions (blue background)
+- **Secondary**: Used for secondary actions (gray background)
+- **Outline**: Used for subtle actions (transparent with border)
+- **Ghost**: Used for minimal actions (transparent, no border)
+- **Danger**: Used for destructive actions (red background)
+
+<Canvas of={ButtonStories.Variants} />
+
+## Sizes
+
+Buttons are available in three sizes:
+
+- **Small (`sm`)**: Compact buttons for tight spaces
+- **Medium (`md`)**: Default size for most use cases
+- **Large (`lg`)**: Prominent buttons for important actions
+
+<Canvas of={ButtonStories.Sizes} />
+
+## States
+
+### Disabled State
+
+Disabled buttons cannot be clicked and have reduced opacity. Click events are not emitted when the button is disabled.
+
+<Canvas of={ButtonStories.Disabled} />
+
+### Loading State
+
+Loading buttons display a spinner and are automatically disabled. This is useful for async operations.
+
+<Canvas of={ButtonStories.Loading} />
+
+## Advanced Usage
+
+### With Icons
+
+Buttons can contain icons alongside text by adding content to the default slot:
+
+<Canvas of={ButtonStories.WithIcons} />
+
+```vue
+<template>
+  <Button variant="primary">
+    <span class="mr-2">✓</span>
+    Save Changes
+  </Button>
+</template>
+```
+
+### Button Group
+
+Buttons can be grouped together for related actions:
+
+<Canvas of={ButtonStories.ButtonGroup} />
+
+```vue
+<template>
+  <div class="inline-flex rounded-lg shadow-sm" role="group">
+    <Button variant="outline" class="rounded-r-none border-r-0">Left</Button>
+    <Button variant="outline" class="rounded-none border-r-0">Middle</Button>
+    <Button variant="outline" class="rounded-l-none">Right</Button>
+  </div>
+</template>
+```
+
+### Polymorphic Button (asChild)
+
+Use the `asChild` prop to render the button as a different element while maintaining button styling:
+
+```vue
+<template>
+  <Button as-child variant="primary">
+    <a href="/somewhere">Link styled as button</a>
+  </Button>
+</template>
+```
+
+## Accessibility
+
+The Button component is built with accessibility in mind:
+
+- ✅ **Semantic HTML**: Uses proper `<button>` element by default
+- ✅ **Keyboard Navigation**: Fully accessible via keyboard (Tab, Enter, Space)
+- ✅ **Focus Management**: Clear focus indicators with `focus-visible` states
+- ✅ **Disabled State**: Properly prevents interactions when disabled
+- ✅ **ARIA Attributes**: Uses appropriate ARIA attributes from Reka UI
+- ✅ **Screen Reader Friendly**: Clear button labels and states
+
+### Best Practices
+
+1. **Always provide descriptive text**: Avoid buttons with only icons without accessible labels
+2. **Use appropriate variants**: Use `danger` for destructive actions, `primary` for main actions
+3. **Loading states**: Always show loading state during async operations
+4. **Disabled vs Hidden**: Use disabled state when action is temporarily unavailable, hide when not applicable
+
+## Dark Mode Support
+
+All button variants are designed to work seamlessly in both light and dark modes. The component automatically adapts to the theme using Tailwind's dark mode classes.
+
+**Toggle the theme using the toolbar** (🌓 icon) to see how buttons look in different themes.
+
+## TypeScript
+
+The Button component is fully typed. Import types for props:
+
+```typescript
+import type { ButtonVariant, ButtonSize } from '@schuijers/ui'
+
+const variant: ButtonVariant = 'primary'
+const size: ButtonSize = 'md'
+```
+
+## Browser Support
+
+The Button component supports all modern browsers:
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Related Components
+
+- Coming soon: IconButton, ButtonGroup, SplitButton

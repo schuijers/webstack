@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@source '../../../packages/ui/src/**/*.{vue,ts}';
+@source '../src/**/*.{ts,mdx}';
+
+/* Dark mode styles */
+.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Storybook specific styles */
+#storybook-root {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.dark #storybook-root {
+  background-color: #1a1a1a;
+}
+
+.light #storybook-root {
+  background-color: #ffffff;
+}
