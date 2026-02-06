@@ -4,6 +4,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
+  tags: ['!autodocs'],
   title: 'Welcome',
 } satisfies Meta
 
