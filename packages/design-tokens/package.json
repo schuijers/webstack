@@ -4,13 +4,13 @@
   "description": "Design tokens for Schuijers Webstack",
   "license": "MIT",
   "author": "Martijn Schuijers",
-  "homepage": "https://codeberg.org/schuijers/schuijers-webstack/packages/design-tokens",
+  "homepage": "https://github.com/schuijers/webstack/packages/design-tokens",
   "repository": {
     "type": "git",
-    "url": "https://codeberg.org/schuijers/schuijers-webstack.git"
+    "url": "https://github.com/schuijers/webstack.git"
   },
   "bugs": {
-    "url": "https://codeberg.org/schuijers/schuijers-webstack/issues"
+    "url": "https://github.com/schuijers/webstack/issues"
   },
   "type": "module",
   "main": "dist/index.js",
@@ -23,8 +23,5 @@
     "design tokens",
     "schuijers",
     "style dictionary"
-  ],
-  "engines": {
-    "node": ">=21.0.0"
-  }
+  ]
 }

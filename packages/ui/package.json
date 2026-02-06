@@ -4,14 +4,14 @@
   "description": "A UI library for modern front-ends, powered by Vue and Tailwind.",
   "license": "MIT",
   "author": "Martijn Schuijers",
-  "homepage": "https://codeberg.org/schuijers/schuijers-webstack/packages/ui",
+  "homepage": "https://github.com/schuijers/webstack/packages/ui",
   "repository": {
     "directory": "packages/ui",
     "type": "git",
-    "url": "https://codeberg.org/schuijers/schuijers-webstack.git"
+    "url": "https://github.com/schuijers/webstack.git"
   },
   "bugs": {
-    "url": "https://codeberg.org/schuijers/schuijers-webstack/issues"
+    "url": "https://github.com/schuijers/webstack/issues"
   },
   "type": "module",
   "exports": {
@@ -51,11 +51,11 @@
   },
   "devDependencies": {
     "@schuijers/eslint-config": "3.0.0",
-    "@storybook/vue3": "10.2.4",
+    "@storybook/vue3": "10.2.7",
     "@vitejs/plugin-vue": "6.0.4",
     "@vue/test-utils": "2.4.6",
     "eslint": "9.39.2",
-    "happy-dom": "20.4.0",
+    "happy-dom": "20.5.0",
     "tailwindcss": "4.1.18",
     "typescript": "5.9.3",
     "unbuild": "3.6.1",
@@ -74,8 +74,5 @@
     "typescript",
     "vue"
   ],
-  "engines": {
-    "node": ">=20.0.0"
-  },
   "style": "./dist/styles/index.css"
 }
