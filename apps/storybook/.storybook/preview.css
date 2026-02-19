@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@source '../../../packages/ui/src/**/*.{vue,ts}';
+@source '../src/**/*.{ts,mdx}';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html.dark body {
+  background-color: rgb(34, 35, 37);
+  color: #fff;
+}

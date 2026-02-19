@@ -5,10 +5,12 @@ const config: StorybookConfig = {
     '@storybook/addon-a11y',
     '@storybook/addon-docs',
     '@storybook/addon-links',
+    '@vueless/storybook-dark-mode',
     '@storybook/addon-themes',
   ],
   core: {
     disableTelemetry: true,
+    disableWhatsNewNotifications: true,
   },
   docs: {
     defaultName: 'Documentation',

@@ -11,14 +11,4 @@ export default schuijers({
       tsconfigRootDir: __dirname,
     },
   },
-  unicorn: {
-    overrides: {
-      'unicorn/filename-case': [
-        'error', {
-          case: 'kebabCase',
-          ignore: [/\.stories\.ts$/],
-        },
-      ],
-    },
-  },
 })
