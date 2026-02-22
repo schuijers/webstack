@@ -23,6 +23,10 @@ import type { ButtonProps, ButtonSize, ButtonVariant } from './Button.types'
 import { Primitive } from 'reka-ui'
 import { computed } from 'vue'
 
+defineOptions({
+  name: 'UiButton',
+})
+
 const properties = withDefaults(defineProps<ButtonProps>(), {
   asChild: false,
   disabled: false,

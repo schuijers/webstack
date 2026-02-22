@@ -14,26 +14,4 @@ export default schuijers({
       tsconfigRootDir: __dirname,
     },
   },
-  unicorn: {
-    overrides: {
-      'unicorn/filename-case': [
-        'error', {
-          case: 'kebabCase',
-          ignore: [
-            /\.spec\.ts$/,
-            /\.stories\.ts$/,
-            /\.test\.ts$/,
-            /\.types\.ts$/,
-            /\.vue$/,
-          ],
-        },
-      ],
-      'unicorn/prevent-abbreviations': 'off',
-    },
-  },
-  vue: {
-    overrides: {
-      'vue/multi-word-component-names': 'off',
-    },
-  },
 })
