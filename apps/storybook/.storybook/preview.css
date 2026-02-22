@@ -9,3 +9,7 @@ html.dark body {
   background-color: rgb(34, 35, 37);
   color: #fff;
 }
+
+#storybook-docs .sbdocs-wrapper {
+  @apply p-8;
+}
