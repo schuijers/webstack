@@ -43,6 +43,7 @@
   },
   "types": "./dist/index.d.ts",
   "dependencies": {
+    "@iconify/vue": "5.0.0",
     "reka-ui": "2.8.2"
   },
   "peerDependencies": {
